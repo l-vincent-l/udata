@@ -17,11 +17,11 @@ import ResourceModal from './resource-modal.vue';
 import LeafletMap from 'components/leaflet-map.vue';
 import FollowButton from 'components/buttons/follow.vue';
 import ShareButton from 'components/buttons/share.vue';
+import DiscussionThreads from 'components/discussions/threads.vue';
 
 // Legacy widgets
 import 'widgets/featured';
 import 'widgets/issues-btn';
-import 'widgets/discussions-btn';
 import 'widgets/integrate-btn';
 
 
@@ -34,7 +34,7 @@ function parseUrl(url) {
 
 new Vue({
     el: 'body',
-    components: {LeafletMap, ShareButton, FollowButton},
+    components: {LeafletMap, ShareButton, FollowButton, DiscussionThreads},
     data() {
         const data = {
             dataset: this.extractDataset(),
